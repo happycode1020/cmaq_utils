@@ -69,8 +69,8 @@ def interp_target(tPlevel,concFile,lat,lon,outPath):
 		datas.to_netcdf(outPath+concFile.split('/')[-1])
 
 if __name__ == '__main__':
-	grid2dFile = '/work/home/nhsz/HQOH/aqm/CMAQ/data/cmaqinput/mcip/GRIDCRO2D_230402.nc'
-	outPath = '/work/home/nhsz/HQOH/aqm/CMAQ/data/POST'
+	grid2dFile = './mcip/GRIDCRO2D_230402.nc'
+	outPath = './CMAQ/data/POST'
 	# tPlevel = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 1000]
 	tPlevel = [1000, 990, 980,  970, 960, 930]
 	lat,lon = get_lat_lon_vert(grid2dFile)

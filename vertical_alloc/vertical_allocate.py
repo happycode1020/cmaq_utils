@@ -57,7 +57,7 @@ def vertival_allocate(fileType,emisPath,proFile):
 
 if __name__ == '__main__':
     proFile = './profile.csv'
-    emisPath = '/work/home/nhsz/HQOH/boom/CMAQ/data/nuclearinput/EMIS2'
+    emisPath = './EMIS2'
     sectors = ['power','industry']
     for sec in sectors:
         vertival_allocate(fileType=sec,emisPath=emisPath,proFile=proFile)
